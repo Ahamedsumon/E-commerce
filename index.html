@@ -7,10 +7,43 @@
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Phone Hunter</title>
 </head>
-<body>
-   <main>
+<body class="">
+  <header class="py-10 bg-[#0D6EFD0D]">
+    <nav class="flex justify-between max-w-6xl m-auto">
+      <a class="text-xl font-bold" href="#">Hot Gadgets</a>
+      <button class="btn bg-[#0D6EFDFF] text-white px-6 rounded-lg">Sign Up</button>
+    </nav>
+    <!-- Hero section -->
+    <section class="max-w-6xl mx-auto flex flex-col items-center gap-5 mt-10 pb-50">
+      <h1 class="text-4xl font-bold">Apple Iphone 13 Pro Max</h1>
+      <p class="max-w-lg text-xs text-center">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+      <button class="btn bg-[#0D6EFDFF] text-white px-4 rounded-md">Buy Now</button>
+    </section>
+  </header>
+   <main class="max-w-6xl m-auto">
+    <!-- Overlay mobile images -->
     <section>
-        <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class="flex -mt-45 items-center justify-center">
+        <div class="mt-20">
+          <img src="/images/pngwing 3.png" alt="">
+        </div>
+        <div>
+          <img src="/images/pngwing 1.png" alt="">
+        </div>
+        <div class="mt-20">
+          <img src="/images/pngwing 2.png" alt="">
+        </div>
+      </div>
+      <div class="text-center ">
+        <p class="text-3xl font-bold my-10">Search your phone</p>
+         <div class="mb-20 flex justify-center gap-2">
+          <input class="border-none bg-gray-100 py-2 rounded-lg pl-5 pr-20" type="search" name="search" id="search" placeholder="search your phone">
+         <button class="btn bg-[#0D6EFDFF] text-white px-6">Search</button>
+         </div>
+      </div>
+    </section>
+    <section>
+        <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 place-items-center">
             <!-- <div class="card bg-gray-100 w-96 shadow-sm">
   <figure>
     <img
@@ -25,12 +58,60 @@
     </div>
   </div>
 </div> -->
- 
+            
 
+        </div>
+        <div class="flex justify-center my-10">
+          <button class="btn bg-[#0D6EFDFF] text-white">Show All</button>
         </div>
         
     </section>
    </main>
+   <!-- Footer section -->
+   <footer class="bg-[#0D6EFD0D] py-20">
+    <div class="flex items-center justify-between max-w-6xl mx-auto border-b border-gray-300 pb-10">
+      <div>
+        <p class="text-4xl font-bold pb-2">Hot Gadgets</p>
+        <p>You can definitely work.</p>
+      </div>
+      <div>
+        <button class="btn bg-[#0D6EFDFF] text-white px-6 rounded-lg">Join Premium</button>
+      </div>
+    </div>
+    <div class="flex justify-between max-w-6xl mx-auto mt-10">
+      <ul class="flex flex-col gap-1">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Browse jobs</a></li>
+        <li><a href="#">Remote jobs</a></li>
+        <li><a href="#">Startup jobs</a></li>
+        <li><a href="#">Company jobs</a></li>
+      </ul>
+      <ul class="flex flex-col gap-1">
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">Product Design</a></li>
+        <li><a href="#">Back-End Developer</a></li>
+        <li><a href="#">Front-End Developer</a></li>
+      </ul>
+      <ul class="flex flex-col gap-1">
+        <li><a href="#">Resource</a></li>
+        <li><a href="#">Faq</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+      <ul class="flex flex-col gap-1">
+        <li><a href="#">Company</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Career Tips</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+   </footer>
+
+
+
 
     <script src="app.js"></script>
 </body>
